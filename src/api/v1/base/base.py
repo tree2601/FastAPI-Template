@@ -25,8 +25,10 @@ from settings import settings
 from utils.jwt import create_token_pair, verify_token
 
 class AdaptiveEnvConfig(StarletteConfig):
-    def _read_file(self, file_name):
+    def _read_file(self, file_name, encoding=None):
         encodings = ["utf-8", "utf-8-sig"]
+        if encoding:
+            encodings.insert(0, encoding)
         preferred = locale.getpreferredencoding(do_setlocale=False)
         if preferred and preferred.lower() not in (e.lower() for e in encodings):
             encodings.append(preferred)
