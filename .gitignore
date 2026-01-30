@@ -177,6 +177,7 @@ cython_debug/
 migrations/
 *.sqlite3*
 
+
 # UV specific
 uv.lock
 
@@ -211,3 +212,6 @@ logs/*.log
 
 # Documentation files (internal use only)
 IMPROVEMENT_ROADMAP.md
+
+# Corpus
+/corpus/*

@@ -49,6 +49,11 @@ dependencies = [
     "setuptools>=68.0.0",
     "slowapi>=0.1.9",
     "redis>=4.5.0",
+    "tushare>=1.4.24",
+    "ipykernel>=7.1.0",
+    "pgvector>=0.4.2",
+    "openai>=2.16.0",
+    "langgraph>=1.0.7",
 ]
 
 [project.optional-dependencies]
